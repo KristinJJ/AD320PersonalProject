@@ -1,20 +1,24 @@
-"use strict"
-function replaceTrivia() {
-  var mainDiv = document.getElementById("changeable");
-  var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-  mainDiv.style.backgroundColor = randomColor;    
-    
-  var trivable = document.getElementById('trivable');
-
-  fetch("http://numbersapi.com/random?json", {
-    method: "GET",
-  })
-    .then((response) => {
-      console.log(response);
-      response.json().then(json => trivable.innerText = json.text);
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+.full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
 }
 
+.inner {
+  flex-direction: column;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 10px;
+  height: 50px;
+}
