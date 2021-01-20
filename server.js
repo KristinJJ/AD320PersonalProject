@@ -8,10 +8,6 @@ const requestListener = function( req, res) {
         { name: 'Jessica', status: 'admin'},
         { name: 'Chad', status: 'client'}
     ];
-
-    /*req.on('data', chunk => {
-        console.log(`Data chunk available: ${chunk}`)
-      })*/
       
     if (req.url == '/' && req.method == 'POST') {
         // set response header
@@ -40,11 +36,9 @@ const requestListener = function( req, res) {
     }
 }
 
-
 // create the web server
 const server = http.createServer(requestListener);
 
 // listen for incoming requests
 server.listen(5000); 
-
 console.log('Node.js web server at port 5000 is running! :)');
