@@ -12,3 +12,5 @@ Personal Project for AD320
 * CSS
 * Javascript
 * Node.js
+* React
+* Express
