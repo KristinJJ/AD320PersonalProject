@@ -4,9 +4,12 @@ const app = express();
 const port = 4000;
 
 app.get('/', (req, res) => {
-    res.send("Hello William");
+    res.header('statusCode', 200);
+    res.send(`<html>
+                <h2>Hi there :)</h2>
+            </html>`);
 });
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`listening at http://localhost:${port}`);
 });
