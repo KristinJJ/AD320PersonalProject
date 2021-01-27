@@ -1,0 +1,13 @@
+.header {
+    max-height: 200px;
+}
+
+.logo {
+    max-width: 10%;
+    padding: 20px;
+}
+
+.title {
+    font: italic;
+    margin: 10px;
+}

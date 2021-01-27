@@ -1,10 +1,10 @@
-import logo from './images/picture.png';
-//import '.HomePage.css';
+import './HomePage.css';
+import LogoBar from './components/LogoBar';
 
 function App() {
     return (
-        <div className="HomePage">
-            <img src={logo} className="HomePageLogo" alt="logo"/>
+        <div className="homePage">
+            <LogoBar/>
         </div>
     )
 }
